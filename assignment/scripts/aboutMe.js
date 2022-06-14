@@ -10,7 +10,7 @@ let lastName = 'Anderson';
 let fullName = firstName + lastName;
 
 // 4 - Console log the value of `fullName`
-console.log ( fullName );
+console.log ( 'My full name is ', fullName );
 
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 let luckyNumber = 13; 
@@ -34,14 +34,14 @@ let pets = 11;
 let friendsPets = 1;
 
 // 11 - Add two pets to your `pets` variable
-pets = 19;
+pets = 13;
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 let allowedpets = 19; 
 
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
-if ( adventurous ){
+if ( adventurous === true ){
     console.log ('Adventures are great!');
 }
 else {
@@ -52,6 +52,9 @@ else {
 if ( luckyNumber === 13 && adventurous ){
     console.log ('Roll the dice!');
 }
+else{
+    console.log ('Sorry kid. Your luck has run out');
+}    
 
 // 15 - Write a conditional that console logs "I can have more pets!" 
 //if the value of `pets` is less than the value of `allowedPets`,
@@ -74,6 +77,18 @@ else {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
+
+let mostPets = Math.max(pets, friendsPets)
+    if ( pets > friendsPets) {
+        console.log ('I have the most pets', mostPets);
+    }
+    else if ( pets < friendsPets ) {
+        console.log ('My friend has more pets', mostPets);
+    }
+    else if (pets === friendsPets) {
+        console.log ('We have the same ammount of pets!', mostPets);
+}
+
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
