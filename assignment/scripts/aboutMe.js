@@ -13,7 +13,7 @@ let fullName = firstName + lastName;
 console.log ( 'My full name is ', fullName );
 
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
-let luckyNumber = 13; 
+let luckyNumber = 3; 
 
 // 6 - Console log this sentence, adding in the variables you created above: 
 // 'My name is (full name), and I think (lucky number) is a winner!'.
@@ -80,13 +80,13 @@ else {
 
 let mostPets = Math.max(pets, friendsPets)
     if ( pets > friendsPets) {
-        console.log ('I have the most pets', mostPets);
+        console.log ('I have the most pets:', mostPets);
     }
     else if ( pets < friendsPets ) {
-        console.log ('My friend has more pets', mostPets);
+        console.log ('My friend has more pets:', mostPets);
     }
     else if (pets === friendsPets) {
-        console.log ('We have the same ammount of pets!', mostPets);
+        console.log ('We have the same ammount of pets:', mostPets);
 }
 
 
@@ -96,7 +96,23 @@ let mostPets = Math.max(pets, friendsPets)
 //      "Third is the one with the polka dot dress" if your lucky number is 3
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
-
+switch (luckyNumber) {
+    case 1:
+      luckyNumber = 1;
+      console.log ('First is the worst');
+      break;
+    case 2:
+      luckyNumber = 2;
+      console.log ('Second is the best');
+      break;
+    case 3:
+       luckyNumber = 3;
+       console.log ('Third is the one with the polka dot dress. Bonus: The dress has pockets!!!');
+       
+}      
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-
+adventurous = true; {
+let message = adventurous ? 'Adventures are great!' : 'How about we stay home?';
+console.log (message);
+}
