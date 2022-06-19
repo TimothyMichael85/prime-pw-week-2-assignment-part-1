@@ -13,7 +13,7 @@ let fullName = firstName + lastName;
 console.log ( 'My full name is ', fullName );
 
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
-let luckyNumber = 3; 
+let luckyNumber = 13; 
 
 // 6 - Console log this sentence, adding in the variables you created above: 
 // 'My name is (full name), and I think (lucky number) is a winner!'.
@@ -112,7 +112,7 @@ switch (luckyNumber) {
 }      
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-adventurous = true; {
+adventurous = false; {
 let message = adventurous ? 'Adventures are great!' : 'How about we stay home?';
 console.log (message);
 }
